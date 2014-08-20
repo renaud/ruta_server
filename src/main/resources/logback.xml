@@ -1,0 +1,32 @@
+<configuration scan="true">
+
+  <!-- LOGBACK logging config file, see http://logback.qos.ch/manual/joran.html -->
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <!-- http://logback.qos.ch/manual/layouts.html#ClassicPatternLayout -->
+      <Pattern>%-5level %msg [%logger{16} %d{HH:mm:ss}]%n
+      </Pattern>
+      <!--
+        <Pattern>%d{HH:mm:ss}%-5level %logger{36} - %msg%n
+        </Pattern>
+      -->
+    </encoder>
+  </appender>
+
+  <!-- set to DEBUG, INFO, etc. -->
+  <root level="debug">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+  <!-- custom log levels for other libs -->
+  <logger name="org.apache.commons" level="WARN" />
+  <logger name="org.apache.coyote" level="WARN" />
+  <logger name="org.apache.tomcat" level="WARN" />
+  <logger name="org.apache.catalina" level="WARN" />
+  <logger name="ch.qos.logback" level="ERROR" />
+  <logger name="org.hibernate" level="WARN" />
+  <logger name="org.jboss" level="WARN" />
+  <logger name="org.springframework" level="WARN" />
+
+</configuration>
