@@ -17,4 +17,3 @@ Allows to easily expose a RUTA project as a RESTful service
     * web service, e.g. `http://localhost:8566/annotate.json?text=let s annotate some text`
     * html demo, e.g. `http://localhost:8566/index.html`
 
-See an example at https://github.com/renaud/ruta_server/tree/master/example
