@@ -23,7 +23,7 @@ div#output_section{
 div#output_text{
     border: 1px solid gray;
     padding: 5px;
-    min-height: 80px;
+    min-height: 145px;
 }
 
 span.annot{
@@ -33,4 +33,4 @@ span.annot{
     padding-right: 2px;
 }
 
-.Year{color:black;background:lightgreen;}
+

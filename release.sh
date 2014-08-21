@@ -24,3 +24,4 @@ fi
 mv target/appassembler/* "$RELEASE"/.
 
 cp application.properties "$RELEASE"/.
+cp README.md "$RELEASE"/.
